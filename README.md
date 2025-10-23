@@ -26,30 +26,36 @@ Data dummy dihasilkan otomatis menggunakan **Faker** sesuai ketentuan ujian:
 ## Cara Menjalankan Proyek
 
 1. **Clone Repository**
-    git clone https://github.com/username/nama-repo.git
-    cd nama-repo
 
+       git clone https://github.com/username/nama-repo.git
+       cd nama-repo
+   
 4. **Install Dependencies**
-    Composer install
 
-5. **Salin File .env**
-    cp .env.example .env
+       Composer install
 
-6. **Generate APP_KEY**
-    php artisan key:generate
+6. **Salin File .env**
 
-7. **Atur Konfigurasi Database**
+       cp .env.example .env
+
+8. **Generate APP_KEY**
+
+       php artisan key:generate
+
+10. **Atur Konfigurasi Database**
     Buka file .env, lalu sesuaikan bagian berikut:
+        
+        DB_DATABASE=laravel
+        DB_USERNAME=root
+        DB_PASSWORD=
 
-       DB_DATABASE=laravel
-       DB_USERNAME=root
-       DB_PASSWORD=
+12. **Jalankan Migrasi dan Seeder**
 
-8. **Jalankan Migrasi dan Seeder**
-    php artisan migrate --seed
+        php artisan migrate --seed
 
-9. **Jalankan Server**
-    php artisan serve
+14. **Jalankan Server**
+
+        php artisan serve
 
 ## Route / Endpoint Penting ##
 
