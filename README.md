@@ -45,7 +45,7 @@ Data dummy dihasilkan otomatis menggunakan **Faker** sesuai ketentuan ujian:
 10. **Atur Konfigurasi Database**
     Buka file .env, lalu sesuaikan bagian berikut:
         
-        DB_DATABASE=laravel
+        DB_DATABASE=timedoor_backend_exam
         DB_USERNAME=root
         DB_PASSWORD=
 
