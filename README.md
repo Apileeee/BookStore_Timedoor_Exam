@@ -29,26 +29,26 @@ Data dummy dihasilkan otomatis menggunakan **Faker** sesuai ketentuan ujian:
     git clone https://github.com/username/nama-repo.git
     cd nama-repo
 
-2. **Install Dependencies**
+4. **Install Dependencies**
     Composer install
 
-3. **Salin File .env**
+5. **Salin File .env**
     cp .env.example .env
 
-4. **Generate APP_KEY**
+6. **Generate APP_KEY**
     php artisan key:generate
 
-5. **Atur Konfigurasi Database**
+7. **Atur Konfigurasi Database**
     Buka file .env, lalu sesuaikan bagian berikut:
 
        DB_DATABASE=laravel
        DB_USERNAME=root
        DB_PASSWORD=
 
-7. **Jalankan Migrasi dan Seeder**
+8. **Jalankan Migrasi dan Seeder**
     php artisan migrate --seed
 
-8. **Jalankan Server**
+9. **Jalankan Server**
     php artisan serve
 
 ## Route / Endpoint Penting ##
