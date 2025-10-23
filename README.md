@@ -68,4 +68,3 @@ Berikut daftar endpoint utama dalam proyek ini:
 | GET | `/add-rating` | Menampilkan form input rating | - |
 | POST | `/add-rating` | Menyimpan rating baru | `author_id`, `book_id`, `rating` |
 | GET | `/books-by-author/{authorId}` | Mengambil daftar buku berdasarkan penulis | `authorId` |
-
