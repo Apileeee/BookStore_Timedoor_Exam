@@ -72,5 +72,5 @@ POST /add-rating
 Simpan rating baru
 
 GET /books-by-author/{authorId}
-API JSON untuk mendapatkan buku berdasarkan author (dipakai AJAX pada form)
+API JSON untuk mendapatkan buku berdasarkan author
 
