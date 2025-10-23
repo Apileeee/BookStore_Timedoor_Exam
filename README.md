@@ -57,20 +57,15 @@ Data dummy dihasilkan otomatis menggunakan **Faker** sesuai ketentuan ujian:
 
         php artisan serve
 
-## Route / Endpoint Penting ##
+## API Documentation
 
-GET /
-Halaman daftar buku (param: limit default 10, search)
+Berikut daftar endpoint utama dalam proyek ini:
 
-GET /top-authors
-Halaman 10 penulis terpopuler (hitung voter rating > 5)
-
-GET /add-rating
-Form input rating (pilih author → book → rating)
-
-POST /add-rating
-Simpan rating baru
-
-GET /books-by-author/{authorId}
-API JSON untuk mendapatkan buku berdasarkan author
+| Method | Endpoint | Deskripsi | Parameter |
+|--------|-----------|------------|------------|
+| GET | `/` | Menampilkan daftar buku berdasarkan rating tertinggi | `limit` (default 10), `search` |
+| GET | `/top-authors` | Menampilkan 10 penulis terpopuler berdasarkan rating > 5 | - |
+| GET | `/add-rating` | Menampilkan form input rating | - |
+| POST | `/add-rating` | Menyimpan rating baru | `author_id`, `book_id`, `rating` |
+| GET | `/books-by-author/{authorId}` | Mengambil daftar buku berdasarkan penulis | `authorId` |
 
