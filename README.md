@@ -40,15 +40,15 @@ Data dummy dihasilkan otomatis menggunakan **Faker** sesuai ketentuan ujian:
 
 5. **Atur Konfigurasi Database**
     Buka file .env, lalu sesuaikan bagian berikut:
-    
-    DB_DATABASE=laravel
-    DB_USERNAME=root
-    DB_PASSWORD=
 
-6. **Jalankan Migrasi dan Seeder**
+       DB_DATABASE=laravel
+       DB_USERNAME=root
+       DB_PASSWORD=
+
+7. **Jalankan Migrasi dan Seeder**
     php artisan migrate --seed
 
-7. **Jalankan Server**
+8. **Jalankan Server**
     php artisan serve
 
 ## Route / Endpoint Penting ##
